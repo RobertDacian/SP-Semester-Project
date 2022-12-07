@@ -1,0 +1,51 @@
+// Forms Styling
+
+.require {
+  color: $danger;
+}
+
+form {
+  .form-control {
+    &:focus {
+      border-color: $border-color-focus;
+    }
+  }
+
+  @media (max-width: 992px) {
+    width: 50%;
+  }
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+  .search-icon {
+    opacity: 50%;
+  }
+
+  .form-wrapper {
+    width: 100%;
+  }
+}
+
+.message {
+  padding: 1rem;
+  border: 1px solid grey;
+  color: grey;
+}
+
+.success {
+  color: green;
+  border-color: green;
+  background: rgba(0, 255, 0, 0.1);
+}
+
+.error {
+  color: red;
+  border-color: red;
+  background: rgba(255, 0, 0, 0.1);
+}
+
+.warning {
+  color: orange;
+  border-color: orange;
+  background: rgba(100, 0, 0, 0.1);
+}
